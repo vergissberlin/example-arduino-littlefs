@@ -1,5 +1,3 @@
-
-
 #include <Arduino.h>
 #include <LittleFS.h>
 
@@ -13,7 +11,7 @@ void setup() {
     Serial.println("LittleFS mounted successfully");
   }
 
-  // Erstellt eine Datei und schreibt Daten hinein
+  // Creates a file and writes data to it
   File file = LittleFS.open("/example.txt", "w");
   if (!file) {
     Serial.println("There was an error opening the file for writing");
